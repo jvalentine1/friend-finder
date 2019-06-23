@@ -1,0 +1,136 @@
+
+/* -------- Home Page CSS -------- */
+
+/* Header */
+
+.home-page {
+    background-image: url(https://webprintmore.com/wp-content/uploads/2017/08/4214905-background-images-for-websites.jpg);
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+}
+
+.title-host {
+    margin-top: 2em;
+    padding-top:20px;
+}
+
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+#home-text {
+    font-family: 'Fredoka One', cursive;
+}
+
+.logo {
+    font-size: 20px;
+    padding-top:15px;
+    padding-bottom: 10px;
+}
+
+  /* Button Host */
+
+  .btn-host {
+      padding-top: 7.5em;
+  }
+
+  .btn-message {
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .btn-div {
+      padding-top:55px;
+  }
+
+  .survey-btn {
+      color:black;
+      font-family: 'Fredoka One', cursive;
+      padding:9px;
+      border: solid 2px black;
+      border-radius: 27%;
+  }
+
+  .survey-btn:hover {
+      cursor: pointer;
+      text-decoration: none;
+      background-color: black;
+      color:ivory;
+  }
+
+  /* ---------- Survey Page CSS ---------- */
+
+  /* Header */
+
+  .survey-page {
+    background-image: url(https://webprintmore.com/wp-content/uploads/2017/08/4214905-background-images-for-websites.jpg);
+    background-size: cover;
+    width:100%;
+  }
+
+  .survey-title-host {
+      margin-top: 2em;
+  }
+
+  .survey-title {
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .home-button {
+    font-family: 'Fredoka One', cursive;
+    color:black;
+  }
+
+  /* survey page body */
+
+  .survey-host {
+      padding-top: 3.5em;
+  }
+
+  .submit-btn-host {
+      padding-top: 3em;
+      padding-bottom:3em;
+  }
+
+  #survey-submit {
+    background-color: transparent;
+    color:black;
+    font-family: 'Fredoka One', cursive;
+    padding:9px;
+    border: solid 2px black;
+    border-radius: 27%;
+  }
+
+  #survey-submit:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: black;
+    color:ivory;
+  }
+
+  .survey-question {
+      padding-top: 7px;
+      font-family: 'Fredoka One', cursive;
+      font-size:20px;
+  }
+
+  
+
+
+
