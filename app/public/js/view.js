@@ -50,22 +50,56 @@ function getAllFriends(userData) {
     });
 }
 
+//Pushes new user to the json object
 function postNewUser(userData) {
     $.post("api/friends", userData[0], function(data) {
-        console.log(data);
     });
 }
 
+//this algorithm performs a search through all of the stored friends and compares the new user scores and finds the best match
 function compareFriends(userData, storedData) {
-    console.log(storedData);
+    var valueDiff = [];
 
-    var newUser = userData[0];
     var userScores = userData[0].scores;
 
     console.log(userScores);
+    console.log(storedData);
 
-    for (var i = 0; i < userScores.length; i++) {
-        
+    for (var i = 0; i < storedData.length; i++) {
+        let dataScores = storedData[i].scores;
+
+        var scoreDiff = [];
+
+        for (var j = 0; j < userScores.length; j++) {
+            let newScores = userScores[j];
+            let oldScores = dataScores[j];
+
+            let scoreComp = newScores - oldScores;
+            let score = Math.abs(scoreComp);
+
+            scoreDiff.push(score);
+        }
+        let totalScore = scoreDiff.reduce((a, b) => a + b, 0);
+
+        valueDiff.push(totalScore);
     }
+    findMatch(valueDiff, storedData);
+}
+
+//this function finds the index number of the lowest value and then makes the selection on your match
+function findMatch(array, data) {
+
+    var lowestVal = Math.min(...array);
+
+    for (var i = 0; i < array.length; i++) {
+        if (lowestVal === array[i]) {
+            generateMatch(data[i]);
+        }
+    }
+}
+
+// this function generates the closest match to the html for the user
+function generateMatch(matchData) {
+    console.log(matchData);
 }
 });
