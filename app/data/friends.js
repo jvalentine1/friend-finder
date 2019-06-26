@@ -4,7 +4,7 @@
 var friends = [
     {
         name: "Mike Smith",
-        photo: "https://conquestresources.com/wp-content/uploads/2017/11/placeholder-md.png",
+        photo: "https://static.wearpact.com/img/metadata/men-1540998082.jpg",
         scores: [
             4,
             2,
@@ -20,7 +20,7 @@ var friends = [
     },
     {
         name: "Michelle Sing",
-        photo: "https://conquestresources.com/wp-content/uploads/2017/11/placeholder-md.png",
+        photo: "https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg",
         scores: [
             3,
             3,
@@ -36,7 +36,7 @@ var friends = [
     },
     {
         name: "John Doe",
-        photo: "https://conquestresources.com/wp-content/uploads/2017/11/placeholder-md.png",
+        photo: "https://www.madewell.com/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/dwb69dcf76/images/inspo/thumbnails/01_SP19M_71_I_4x5_THUMB.jpg",
         scores: [
             3,
             5,
@@ -52,7 +52,7 @@ var friends = [
     },
     {
         name: "Jane Doe",
-        photo: "https://conquestresources.com/wp-content/uploads/2017/11/placeholder-md.png",
+        photo: "https://www.reduceimages.com/img/image-after.jpg",
         scores: [
             1,
             1,
@@ -68,7 +68,7 @@ var friends = [
     },
     {
         name: "Dan Carl",
-        photo: "https://conquestresources.com/wp-content/uploads/2017/11/placeholder-md.png",
+        photo: "https://image.shutterstock.com/image-photo/turn-back-quiet-calm-serious-260nw-754702039.jpg",
         scores: [
             2,
             3,

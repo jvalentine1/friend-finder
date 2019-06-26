@@ -46,7 +46,6 @@ function getAllFriends(userData) {
         method:"GET"
     }).then(function(data) {
         compareFriends(userData, data);
-        postNewUser(userData)
     });
 }
 
@@ -61,9 +60,6 @@ function compareFriends(userData, storedData) {
     var valueDiff = [];
 
     var userScores = userData[0].scores;
-
-    console.log(userScores);
-    console.log(storedData);
 
     for (var i = 0; i < storedData.length; i++) {
         let dataScores = storedData[i].scores;
@@ -83,28 +79,25 @@ function compareFriends(userData, storedData) {
 
         valueDiff.push(totalScore);
     }
-    findMatch(valueDiff, storedData);
+    findMatch(valueDiff, storedData, userData);
 }
 
 //this function finds the index number of the lowest value and then makes the selection on your match
-function findMatch(array, data) {
+function findMatch(array, data, userData) {
 
     var lowestVal = Math.min(...array);
 
     for (var i = 0; i < array.length; i++) {
         if (lowestVal === array[i]) {
-            generateMatch(data[i]);
+            generateMatch(data[i], userData);
         }
     }
 }
 
 // this function generates the closest match to the html for the user
-function generateMatch(matchData) {
-    console.log(matchData);
+function generateMatch(matchData, userData) {
 
     var modal = document.getElementById("myModal");
-
-    console.log(modal);
 
     var span = document.getElementsByClassName("close")[0];
 
@@ -138,5 +131,6 @@ function generateMatch(matchData) {
         modal.style.display = "none";
         }
     }
+    postNewUser(userData);
 }
 });
