@@ -101,5 +101,42 @@ function findMatch(array, data) {
 // this function generates the closest match to the html for the user
 function generateMatch(matchData) {
     console.log(matchData);
+
+    var modal = document.getElementById("myModal");
+
+    console.log(modal);
+
+    var span = document.getElementsByClassName("close")[0];
+
+    modal.style.display = "block";
+
+    var modalDiv = $("<div>");
+
+    var matchName = $("<h1>");
+    matchName.html(matchData.name);
+    matchName.addClass("modal-div");
+    matchName.addClass("text-center");
+    modalDiv.append(matchName);
+
+    var modalBr1 = $("<br>");
+    modalDiv.append(modalBr1);
+
+    var matchImg = $("<img>");
+    matchImg.attr("src", matchData.photo);
+    matchImg.addClass("modal-img");
+    matchImg.addClass("rounded mx-auto d-block");
+    modalDiv.append(matchImg);
+
+    $(".modal-match").append(modalDiv);
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
 }
 });
