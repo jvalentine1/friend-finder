@@ -132,5 +132,6 @@ function generateMatch(matchData, userData) {
         }
     }
     postNewUser(userData);
+    console.log(userData);
 }
 });
