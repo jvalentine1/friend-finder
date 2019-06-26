@@ -177,6 +177,11 @@
   width:200px;
 }
 
+/* invalid entry red border */
+.invalid-entry {
+  border: solid 1px red;
+}
+
   
 
 

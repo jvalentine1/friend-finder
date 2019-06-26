@@ -22,22 +22,22 @@ $("#survey-submit").on("click", function(e) {
             ]
         }
     ];
-    // if (userData[0].name === "" && userData[0].photo === "") {
-    //     alert("invalid input");
-    // }
-    // else {
-    //     var scoreArray = userData[0].scores;
-    //     for (var i = 0; i < scoreArray.length; i++) {
-    //         if (scoreArray[i] === "Select") {
-    //             alert("invalid input");
-    //         }
-    //         else {
-    //             getAllFriends(userData);
-    //         }
-    //     }
-    // }
-    getAllFriends(userData);
+    //Checks if a valid name has been entered
+    if (userData[0].name === "") {
+        alert("Must Enter A Valid Name");
+    } else {
+        checkImg(userData);
+    }
 });
+
+//checks if a valid image has been entered
+function checkImg(userData) {
+    if (userData[0].photo === "") {
+        alert("Must Provide A Profile Picture");
+    } else {
+        getAllFriends(userData);
+    }
+}
 
 //retrieves the json data and passes the json and user info into a comparison function
 function getAllFriends(userData) {
@@ -132,6 +132,5 @@ function generateMatch(matchData, userData) {
         }
     }
     postNewUser(userData);
-    console.log(userData);
 }
 });
