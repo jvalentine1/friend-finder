@@ -182,6 +182,11 @@
   border: solid 1px red;
 }
 
+@media screen and (max-width:440px) {
+  .media-size {
+    font-size: 40px;
+  }
+}
   
 
 
