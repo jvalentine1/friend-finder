@@ -35,8 +35,18 @@ function checkImg(userData) {
     if (userData[0].photo === "") {
         alert("Must Provide A Profile Picture");
     } else {
-        getAllFriends(userData);
+        checkAnswers(userData);
     }
+}
+
+function checkAnswers(userData) {
+    let scoreCheck = userData[0].scores;
+    for (var i = 0; i < scoreCheck.length; i++) {
+        if (scoreCheck[i] === "Select") {
+            alert("Must Answer All Questions");
+        } 
+    }
+    getAllFriends(userData);
 }
 
 //retrieves the json data and passes the json and user info into a comparison function
