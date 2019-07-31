@@ -40,13 +40,21 @@ function checkImg(userData) {
 }
 
 function checkAnswers(userData) {
+    if(!checkAnswersCall(userData)) {
+        alert("Must Answer All Questions");
+    } else {
+        getAllFriends(userData);
+    }
+}
+
+function checkAnswersCall(userData) {
     let scoreCheck = userData[0].scores;
     for (var i = 0; i < scoreCheck.length; i++) {
         if (scoreCheck[i] === "Select") {
-            alert("Must Answer All Questions");
+            return false;
         } 
     }
-    getAllFriends(userData);
+    return true;
 }
 
 //retrieves the json data and passes the json and user info into a comparison function
