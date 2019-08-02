@@ -63,4 +63,4 @@ function findMatch(array, data, userData) {
 
  Friend Finder will also store the user's newly added information in the friends JSON object for the remainder of the session.
 
- ![json add gif]()
+ ![json add gif](https://github.com/jvalentine1/friend-finder/blob/master/app/images/ff-json-add-gif.gif)
