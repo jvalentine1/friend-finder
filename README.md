@@ -60,3 +60,7 @@ function findMatch(array, data, userData) {
  There is also validation on Friend Finder. If the user has not filled out all required fields than the will be notified of an incomplete submission. 
 
  ![validation gif](https://github.com/jvalentine1/friend-finder/blob/master/app/images/ff-validation-gif.gif)
+
+ Friend Finder will also store the user's newly added information in the friends JSON object for the remainder of the session.
+
+ ![json add gif]()
