@@ -64,3 +64,10 @@ function findMatch(array, data, userData) {
  Friend Finder will also store the user's newly added information in the friends JSON object for the remainder of the session.
 
  ![json add gif](https://github.com/jvalentine1/friend-finder/blob/master/app/images/ff-json-add-gif.gif)
+
+ ## Setting Up Your Machine
+
+ To run Friend Finder on your local machine, you will need to install the following npm packages. 
+
+    * npm install express
+    * npm install path
